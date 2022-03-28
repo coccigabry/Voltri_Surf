@@ -1,0 +1,695 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Varela round", "Noto serif", "Kalam", sans-serif;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.container {
+  display: flex;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: auto;
+  min-height: 5rem;
+}
+
+@media only screen and (max-width: 1060px) and (orientation: landscape) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 800px) and (orientation: portrait) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 830px) and (orientation: landscape) {
+  .container {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 630px) and (orientation: portrait) {
+  .container {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 510px) and (orientation: landscape) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+  .container {
+    width: 90%;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Varela round";
+}
+
+p {
+  font-family: "Noto serif";
+}
+
+main {
+  background-color: #f8f8fb;
+}
+
+button {
+  background-color: #fece00;
+  border: 1px solid black;
+  color: #0f1a74;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: .85rem;
+  font-family: "Noto serif";
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+  button {
+    padding: .85rem 1.5rem;
+    font-size: .75rem;
+  }
+}
+
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+/*---Header---*/
+header {
+  position: fixed;
+  width: 100%;
+  height: 4.4375rem;
+  border-bottom: solid 1px black;
+  background-color: rgba(254, 206, 0, .6);
+  z-index: 1;
+}
+
+header .content {
+  display: flex;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+header img {
+  flex: 1;
+  width: 69px;
+}
+
+nav.desktop {
+  margin: auto;
+}
+
+header nav ul {
+  display: flex;
+}
+
+nav li {
+  padding: 0 4rem;
+  list-style-type: none;
+}
+
+nav a {
+  vertical-align: bottom;
+  line-height: 1.6;
+  font-size: .875rem;
+  color: rgb(15, 26, 116);
+  font-weight: 900;
+  text-decoration: none;
+  padding: .4375rem;
+}
+
+nav a:hover {
+  color: white;
+  background-color: rgba(15, 26, 116, .8);
+  border-radius: .625rem;
+}
+
+@media only screen and (max-width: 1060px) and (orientation: landscape) {
+  header {
+    height: 6rem;
+  }
+  header .content {
+    margin: .875rem auto;
+  }
+}
+
+
+@media only screen and (max-width: 800px) and (orientation: portrait) {
+  header {
+    height: 6rem;
+  }
+  header .content {
+    margin: .875rem auto;
+  }
+  nav li {
+    padding: 0 3rem;
+  }
+}
+
+@media only screen and (max-width: 830px) and (orientation: landscape) {
+  nav li {
+    padding: 0 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 630px) and (orientation: portrait) {
+  nav.desktop {
+    margin-top: .5rem;
+  }
+  nav ul {
+    padding: 0;
+  }
+  nav li {
+    padding: 0 2rem;
+  }
+}
+
+@media only screen and (max-width: 510px) and (orientation: landscape) {
+  header {
+    height: 3rem;
+  }
+  header .content {
+    margin: 0 auto;
+  }
+  header img {
+    display: none;
+  }
+  nav ul {
+    padding: 0;
+  }
+  nav li {
+    padding: 0 2rem;
+  }
+  nav a {
+    font-size: .75rem;
+  }
+}
+
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+  header {
+    height: 3rem;
+  }
+  header .content {
+    padding: 0;
+    margin: 0 auto;
+  }
+  nav.desktop {
+    margin: 0;
+  }
+  header img {
+    display: none;
+  }
+  nav ul {
+    padding: 0;
+  }
+  nav li {
+    padding: 0 1rem;
+  }
+  nav a {
+    font-size: .75rem;
+  }
+}
+
+/*--- Main ---*/
+/*Banner*/
+.banner {
+  width: 100%;
+  min-height: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/resources/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container .main-logo {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.main-logo img {
+  width: 28rem;
+  margin-bottom: 10rem;
+}
+
+@media only screen and (max-width: 1060px) and (orientation: landscape) {
+  .main-logo img {
+    width: 35rem;
+    margin: 2rem 0;
+  }
+  .banner {
+    width: 100%;
+    min-height: 50rem;
+    }
+}
+
+@media only screen and (max-width: 800px) and (orientation: portrait) {
+  .main-logo img {
+    width: 30rem;
+    margin-bottom: 8rem;
+  }
+  .banner {
+    width: 100%;
+    min-height: 70rem;
+    }
+}
+
+@media only screen and (max-width: 830px) and (orientation: landscape) {
+  .main-logo img {
+    width: 25rem;
+    margin: 3rem 0;
+  }
+  .banner {
+    width: 100%;
+    min-height: 40rem;
+    }
+}
+
+@media only screen and (max-width: 630px) and (orientation: portrait) {
+  .main-logo img {
+    width: 25rem;
+    margin: 0;
+  }
+  .banner {
+    width: 100%;
+    min-height: 50rem;
+    }
+}
+
+@media only screen and (max-width: 510px) and (orientation: landscape) {
+  .main-logo img {
+    width: 15rem;
+    margin: 1rem 0;
+  }
+  .banner {
+    width: 100%;
+    min-height: 20rem;
+    }
+}
+
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+  .main-logo img {
+    width: 15rem;
+    margin: 2rem 0;
+  }
+  .banner {
+    width: 100%;
+    min-height: 30rem;
+    }
+}
+
+/*Quotes*/
+.quotes {
+  display: flex;
+  background-color: #f8f8fb;
+  min-height: 20rem;
+}
+
+.container .quote {
+  padding: 5rem 0;
+}
+
+.quote-row h2 {
+  font-family: "Kalam";
+  font-size: 2rem;
+  font-style: italic;
+  color: #4a4a4a;
+  text-align: center;
+}
+
+.name-row h4 {
+  text-align: right;
+  padding-right: 5rem;
+}
+
+@media only screen and (max-width: 510px) and (orientation: landscape) {
+  .quotes {
+    min-height: 1rem;
+  }
+  .container .quote {
+    padding: 2rem 0;
+  }
+  .quote-row h2 {
+    font-size: 1.5rem;
+  }
+  .name-row h4 {
+    font-size: .75rem;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+  .quotes {
+    min-height: 10rem;
+  }
+  .container .quote {
+    padding: 2rem 0;
+  }
+  .quote-row h2 {
+    font-size: 1.5rem;
+  }
+  .name-row h4 {
+    font-size: .75rem;
+    padding: 0;
+  }
+}
+
+/*About*/
+.about {
+  width: 100%;
+  min-height: 41rem;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(15, 26, 116, .9);
+  background-image: url("/resources/senzanome.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  color:  white;
+  padding-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.who-we-are {
+  width: 50%;
+  padding: 2rem;
+  margin-left: 2rem;
+}
+
+.who-we-are h3 {
+  font-size: 1.8rem;
+  color: white;
+  font-weight: 100;
+}
+
+.vision {
+  width: 50%;
+  border-left: 2px solid rgb(254, 206, 0);
+  padding: 0 2rem;
+  margin-right: 2rem;
+}
+
+.vision h4 {
+  font-size: 1.2rem;
+  color: #fece00;
+}
+
+.vision ul {
+  line-height: 2rem;
+  padding: 0 1.2rem;
+}
+
+.vision li {
+  font-size: 1.1rem;
+  color: white;
+}
+
+.button {
+  margin: 3rem 0;
+}
+
+.button:hover {
+  background-color: white;
+}
+
+@media only screen and (max-width: 800px) and (orientation: portrait) {
+  .about h2 {
+    font-size: 1.8rem;
+  }
+  .who-we-are {
+    margin: 0;
+  }
+  .who-we-are h3 {
+    font-size: 1.5rem;
+  }
+  .vision {
+    margin: 0;
+  }
+  .vision h4 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 830px) and (orientation: landscape) {
+  .about h2 {
+    font-size: 1.8rem;
+  }
+  .who-we-are {
+    margin: 0;
+  }
+  .who-we-are h3 {
+    font-size: 1.5rem;
+  }
+  .vision {
+    margin: 0;
+  }
+  .vision h4 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 630px) and (orientation: portrait) {
+  .about h2 {
+    font-size: 1.8rem;
+  }
+  .who-we-are {
+    margin: 0;
+  }
+  .who-we-are h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .vision {
+    margin: 0;
+  }
+  .vision h4 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .vision ul {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 510px) and (orientation: landscape) {
+  .about h2 {
+    font-size: 1.5rem;
+  }
+  .who-we-are {
+    margin: 0;
+    padding: 1rem;
+  }
+  .who-we-are h3 {
+    font-size: 1.2rem;
+  }
+  .vision {
+    margin: 0;
+    padding: 1rem;
+  }
+  .vision h4 {
+    font-size: .85rem;
+  }
+  .vision ul {
+    line-height: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .vision li {
+    font-size: .85rem;
+  }
+}
+
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+  .about h2 {
+    font-size: 1rem;
+    padding-top: 3rem;
+  }
+  .who-we-are {
+    margin: 0;
+    padding: .25rem;
+  }
+  .who-we-are h3 {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .vision {
+    margin: 0;
+    padding: .5rem;
+  }
+  .vision h4 {
+    text-align: center;
+    font-size: .7rem;
+  }
+  .vision ul {
+    text-align: center;
+    line-height: 1rem;
+    padding: 0 .5rem;
+  }
+  .vision li {
+    font-size: .7rem;
+  }
+}
+
+/*Gallery*/
+
+.pics {
+  margin: 7rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pics img {
+  width: 20rem;
+  margin: 2rem;
+  border: 2px solid black;
+  border-radius: 1rem;
+}
+
+@media only screen and (max-width: 800px) and (orientation: portrait) {
+  .pics img {
+    width: 15rem;
+    margin: 1rem;
+  }
+}
+
+@media only screen and (max-width: 830px) and (orientation: landscape) {
+  .pics img {
+    width: 15rem;
+    margin: 1rem;
+  }
+}
+
+@media only screen and (max-width: 630px) and (orientation: portrait) {
+  .pics img {
+    width: 12rem;
+    margin: .75rem;
+  }
+}
+
+@media only screen and (max-width: 510px) and (orientation: landscape) {
+  .pics img {
+    width: 10rem;
+    margin: .5rem;
+  }
+}
+
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+  .pics img {
+    width: 8rem;
+    margin: .25rem;
+  }
+}
+
+/*End*/
+.end {
+  width: 100%;
+  height: 10rem;
+  background-image: url("/resources/wave-logo.png");
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: bottom;
+}
+
+@media only screen and (max-width: 1060px) and (orientation: landscape) {
+  .end {
+    height: 8rem;
+  }
+}
+
+@media only screen and (max-width: 800px) and (orientation: portrait) {
+  .end {
+    height: 6rem;
+  }
+}
+
+@media only screen and (max-width: 830px) and (orientation: landscape) {
+  .end {
+    height: 5.5rem;
+  }
+}
+
+@media only screen and (max-width: 630px) and (orientation: portrait) {
+  .end {
+    height: 4rem;
+  }
+}
+
+@media only screen and (max-width: 510px) and (orientation: landscape) {
+  .end {
+    height: 3rem;
+  }
+}
+
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+  .end {
+    height: 2rem;
+  }
+}
+
+/*---Footer---*/
+footer {
+  background-color: rgb(15, 26, 116);
+  padding: 1.5rem 3rem;
+}
+
+footer .content {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  color: white;
+  font-size: .875rem;
+}
+
+footer .copyright {
+  flex-grow: 1;
+}
+
+@media only screen and (max-width: 510px) and (orientation: landscape) {
+  footer {
+    padding: 1rem 1rem;
+  }
+  footer .content {
+    align-items: center;
+    font-size: .75rem;
+  }
+}
+
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+  footer {
+    padding: 1rem 0rem;
+  }
+  footer .content {
+    align-items: center;
+    font-size: .5rem;
+  }
+}
