@@ -239,7 +239,7 @@ nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/resources/banner.jpg");
+  background-image: url("../banner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -385,7 +385,7 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   background-color: rgba(15, 26, 116, .9);
-  background-image: url("/resources/senzanome.png");
+  background-image: url("../senzanome.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -614,7 +614,7 @@ nav a:hover {
 .end {
   width: 100%;
   height: 10rem;
-  background-image: url("/resources/wave-logo.png");
+  background-image: url("../wave-logo.png");
   background-size: contain;
   background-repeat: repeat;
   background-position: bottom;
